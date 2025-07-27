@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Coding Journey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .blog-header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background-color: #343a40;
+      color: white;
+    }
+    .blog-post {
+      margin-bottom: 4rem;
+    }
+    pre {
+      background-color: #212529;
+      color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .youtube-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .youtube-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>  <header class="blog-header">
+    <h1>My Coding Journey</h1>
+    <p>Learning PHP, JavaScript, and Web Design Day by Day</p>
+  </header>  <main class="container mt-4">
+    <div class="blog-post">
+      <h2>Day 1 – Learning PHP Basics</h2>
+      <p>Today I learned how to use <code>echo</code>, variables, and loops in PHP.</p>
+      <pre><code>&lt;?php
+$name = "Guest";
+echo "Hello, $name!";$items = ["PHP", "HTML", "CSS"]; foreach ($items as $i) { echo "<li>$i</li>"; } ?></code></pre>
+
+<div class="youtube-video">
+    <iframe src="https://www.youtube.com/embed/OK_JCtrrv-c" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="blog-post">
+  <h2>Day 2 – Forms and $_POST</h2>
+  <p>Learned how to handle forms in PHP.</p>
+  <pre><code>&lt;form method="POST"&gt;
+
+<input name="username" /> <button type="submit">Submit</button> </form>
+
+<?php if ($_SERVER['REQUEST_METHOD'] == 'POST') { echo "Welcome, " . $_POST['username']; } ?></code></pre> </div>
+
+  </main>  <footer class="text-center py-4">
+    <small>&copy; 2025 My Coding Blog. Built with Bootstrap.</small>
+  </footer></body>
+</html>
